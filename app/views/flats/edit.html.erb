@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Edit your appartment</h1>
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :address %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :price_per_night %>
+    <%= f.submit 'Edit appartment', class:'btn btn-primary' %>
+  <% end %>
+</div>
